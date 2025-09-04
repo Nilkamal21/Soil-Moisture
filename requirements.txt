@@ -1,3 +1,5 @@
+setuptools>=65.0.0
+wheel
 tensorflow==2.20.0
 tensorflow-cpu==2.20.0
 numpy==1.24.3
