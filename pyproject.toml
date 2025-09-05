@@ -4,13 +4,14 @@ version = "0.1.0"
 description = "Soil Moisture Fertilizer Recommendation backend"
 authors = ["Nilkamal21 <nilkamaladhikari2005@gmail.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
-tensorflow-cpu = "2.20.0"
-numpy = ">=2.1.0"
 fastapi = "^0.95.2"
 uvicorn = "^0.22.0"
+tensorflow-cpu = "2.20.0"
+numpy = ">=2.1.0"
 pandas = "^2.0.3"
 opencv-python = "^4.8.0.76"
 Pillow = "^10.2.0"
@@ -21,9 +22,7 @@ scikit-learn = "^1.3.0"
 jupyter = "^1.0.0"
 PyYAML = "^6.0"
 SpeechRecognition = "*"
-
-
-
+# pyaudio removed to avoid build errors
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
