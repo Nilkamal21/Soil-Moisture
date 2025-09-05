@@ -7,10 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+tensorflow-cpu = "2.20.0"
+numpy = ">=2.1.0"
 fastapi = "^0.95.2"
 uvicorn = "^0.22.0"
-tensorflow-cpu = "2.20.0"
-numpy = "^1.26.0"
 pandas = "^2.0.3"
 opencv-python = "^4.8.0.76"
 Pillow = "^10.2.0"
@@ -22,6 +22,7 @@ jupyter = "^1.0.0"
 PyYAML = "^6.0"
 SpeechRecognition = "*"
 pyaudio = "*"
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
