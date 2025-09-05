@@ -315,7 +315,9 @@ async def get_audio(filename: str):
     else:
         raise HTTPException(status_code=404, detail="Audio file not found")
 
+import os
 
 if __name__ == "__main__":
-    uvicorn.run("scripts.app:app", host="0.0.0.0", port=8000, reload=True)
+    port = int(os.environ.get("PORT", 8000))  # get port from env or default 8000 locally
+    uvicorn.run("scripts.app:app", host="0.0.0.0", port=port, reload=True)
 
